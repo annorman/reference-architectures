@@ -6,7 +6,7 @@
       "value": {
         "namePrefix": "ra-ntier-ops",
         "computerNamePrefix": "opscenter",
-        "size": "Standard_DS1",
+        "size": "Basic_A1",
         "adminUsername": "testuser",
         "adminPassword": "AweS0me@PW",
         "osType": "linux",
@@ -33,7 +33,7 @@
         "dataDisks": {
           "count": 1,
           "properties": {
-            "diskSizeGB": 128,
+            "diskSizeGB": 40,
             "caching": "None",
             "createOption": "Empty"
           }
@@ -42,15 +42,6 @@
           "caching": "ReadWrite"
         },
         "extensions": [
-          {
-            "name": "ra-ntier-install-opscenter-ext",
-            "settingsConfigMapperUri": "https://raw.githubusercontent.com/mspnp/reference-architectures/master/guidance-compute-n-tier/extensions/linux/opscenter-mapper.json",
-            "publisher": "Microsoft.OSTCExtensions",
-            "type": "CustomScriptForLinux",
-            "typeHandlerVersion": "1.5",
-            "autoUpgradeMinorVersion": true,
-            "properties": { }
-          }
         ],
         "availabilitySet": {
           "useExistingAvailabilitySet": "No",

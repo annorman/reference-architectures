@@ -46,7 +46,7 @@
       "value": {
         "namePrefix": "ra-ntier-web",
         "computerNamePrefix": "web",
-        "size": "Standard_DS1",
+        "size": "Basic_A1",
         "adminUsername": "testuser",
         "adminPassword": "AweS0me@PW",
         "osType": "linux",
@@ -74,25 +74,12 @@
         "dataDisks": {
           "count": 1,
           "properties": {
-            "diskSizeGB": 128,
+            "diskSizeGB": 40,
             "caching": "None",
             "createOption": "Empty"
           }
         },
         "extensions": [
-          {
-            "name": "apache-config-ext",
-            "settingsConfigMapperUri": "https://raw.githubusercontent.com/mspnp/template-building-blocks/master/templates/resources/Microsoft.Compute/virtualMachines/extensions/vm-extension-passthrough-settings-mapper.json",
-            "publisher": "Microsoft.OSTCExtensions",
-            "type": "CustomScriptForLinux",
-            "typeHandlerVersion": "1.5",
-            "autoUpgradeMinorVersion": true,
-            "settingsConfig": {
-              "fileUris": [ "https://raw.githubusercontent.com/mspnp/reference-architectures/master/guidance-compute-multi-vm/extensions/linux/install-apache.sh" ],
-              "commandToExecute": "sh install-apache.sh"
-            },
-            "protectedSettingsConfig": { }
-          }
         ],
         "availabilitySet": {
           "useExistingAvailabilitySet": "No",

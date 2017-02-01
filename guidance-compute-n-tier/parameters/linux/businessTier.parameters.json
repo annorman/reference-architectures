@@ -49,7 +49,7 @@
       "value": {
         "namePrefix": "ra-ntier-biz",
         "computerNamePrefix": "biz",
-        "size": "Standard_DS1",
+        "size": "Basic_A1",
         "adminUsername": "testuser",
         "adminPassword": "AweS0me@PW",
         "osType": "linux",
@@ -75,7 +75,7 @@
         "dataDisks": {
           "count": 1,
           "properties": {
-            "diskSizeGB": 128,
+            "diskSizeGB": 40,
             "caching": "None",
             "createOption": "Empty"
           }
