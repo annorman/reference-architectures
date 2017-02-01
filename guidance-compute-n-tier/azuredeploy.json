@@ -111,25 +111,6 @@
     {
       "type": "Microsoft.Resources/deployments",
       "apiVersion": "2015-01-01",
-      "name": "ra-ntier-data-deployment",
-      "dependsOn": [
-        "Microsoft.Resources/deployments/ra-ntier-vnet-deployment",
-        "Microsoft.Resources/deployments/ra-ntier-data-avset-deployment"
-      ],
-      "properties": {
-        "mode": "Incremental",
-        "templateLink": {
-          "uri": "[variables('templates').deployment.virtualMachine]"
-        },
-        "parametersLink": {
-          "uri": "[variables('templates').parameter.dataTier]",
-          "contentVersion": "1.0.0.0"
-        }
-      }
-    },
-    {
-      "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2015-01-01",
       "name": "ra-ntier-mgmt-jb-deployment",
       "dependsOn": [
         "Microsoft.Resources/deployments/ra-ntier-vnet-deployment"
