@@ -152,7 +152,6 @@
         "Microsoft.Resources/deployments/ra-ntier-vnet-deployment",
         "Microsoft.Resources/deployments/ra-ntier-mgmt-jb-deployment",
         "Microsoft.Resources/deployments/ra-ntier-mgmt-ops-deployment",
-        "Microsoft.Resources/deployments/ra-ntier-data-deployment",
         "Microsoft.Resources/deployments/ra-ntier-biz-deployment",
         "Microsoft.Resources/deployments/ra-ntier-web-deployment"
       ],
