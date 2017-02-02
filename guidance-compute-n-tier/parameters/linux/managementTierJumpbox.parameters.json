@@ -6,7 +6,7 @@
       "value": {
         "namePrefix": "ra-ntier-mgmt",
         "computerNamePrefix": "jumpbox",
-        "size": "Basic_A1",
+        "size": "Standard_A0",
         "adminUsername": "testuser",
         "adminPassword": "AweS0me@PW",
         "osType": "linux",

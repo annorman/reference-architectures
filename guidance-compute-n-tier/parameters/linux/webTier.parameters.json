@@ -46,7 +46,7 @@
       "value": {
         "namePrefix": "ra-ntier-web",
         "computerNamePrefix": "web",
-        "size": "Basic_A1",
+        "size": "Standard_A0",
         "adminUsername": "testuser",
         "adminPassword": "AweS0me@PW",
         "osType": "linux",
